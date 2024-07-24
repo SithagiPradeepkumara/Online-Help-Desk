@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Add Employee</display-name>
+  <welcome-file-list>
+    <welcome-file>dash.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <!-- Loans -->
+     <servlet>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/insertEmployee</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_employee</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/list_employee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateEmployee</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/updateEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editEmployee</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/editEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newEmployee</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/newEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteEmployee</servlet-name>
+		<servlet-class>web.EmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/deleteEmployee</url-pattern>
+	</servlet-mapping>
+	 <servlet>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/insertFeedback</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_feedback</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/list_feedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateFeedback</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/updateFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editFeedback</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/editFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newFeedback</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/newFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteFeedback</servlet-name>
+		<servlet-class>web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/deleteFeedback</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
